@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Create Bill</h2>
+<form method="post">
+    {% csrf_token %}
+    <!-- Add fields for bill items (you can use JavaScript to add multiple items dynamically) -->
+    <button type="submit">Create Bill</button>
+</form>
+{% endblock %}

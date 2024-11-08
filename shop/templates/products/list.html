@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Product List</h2>
+<ul>
+    {% for product in products %}
+    <li>{{ product.name }} - ${{ product.price }} - Quantity: {{ product.quantity }}</li>
+    {% endfor %}
+</ul>
+<a href="{% url 'add_product' %}">Add Product</a>
+{% endblock %}
